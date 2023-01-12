@@ -1,0 +1,14 @@
+<view class="container">
+    <copy value="你好">复制 value 的值</copy>
+    <copy var="text">复制 text 变量的值</copy>
+    <copy value="你好" var="text">复制 value 的值</copy>
+
+    <debug disabled="开启调试" enabled="关闭调试"/>
+    <debug>
+        <button slot="disabled" type="primary">slot开启调试</button>
+        <button slot="enabled" type="primary">slot关闭调试</button>
+    </debug>
+    <debug disabled="开启调试">
+        <text slot="enabled">slot关闭调试</text>
+    </debug>
+</view>

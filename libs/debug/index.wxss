@@ -1,0 +1,9 @@
+.debug {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.debug-action {
+    margin-top: 0.5em;
+}

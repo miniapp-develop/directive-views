@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "copy": "/libs/copy/index",
+    "debug": "/libs/debug/index"
+  }
+}

@@ -1,0 +1,3 @@
+<view class="directive-class" bind:tap="onTap">
+    <slot></slot>
+</view>
