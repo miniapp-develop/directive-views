@@ -9,6 +9,7 @@ Component({
             value: null
         }
     },
+    options: {virtualHost: true},
     externalClasses: ['directive-class'],
     data: {},
     methods: {
