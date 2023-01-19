@@ -10,7 +10,8 @@ Component({
         }
     },
     options: {
-        multipleSlots: true
+        multipleSlots: true,
+        virtualHost: true
     },
     externalClasses: ['directive-class'],
     data: {},
