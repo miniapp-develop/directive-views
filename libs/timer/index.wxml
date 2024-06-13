@@ -1,0 +1,3 @@
+<view class="ui-safe-area ui-class">
+    <slot></slot>
+</view>
