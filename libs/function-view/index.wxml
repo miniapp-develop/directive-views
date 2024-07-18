@@ -1,0 +1,4 @@
+<view class="function directive-class" bind:tap="onTap">
+    <text wx:if="{{ auto }}">{{name}}({{arg}})</text>
+    <slot wx:else></slot>
+</view>

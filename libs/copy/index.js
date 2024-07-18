@@ -9,7 +9,7 @@ Component({
             value: null
         }
     },
-    options: {virtualHost: true},
+    options: { virtualHost: true },
     externalClasses: ['directive-class'],
     data: {},
     methods: {
@@ -18,9 +18,8 @@ Component({
             if (this.data.value) {
                 value = this.data.value;
             } else if (this.data.var) {
-                const pages = getCurrentPages();
-                const page = pages[pages.length - 1];
-                value = page.data[this.data.var];
+                const owner = this.selectOwnerComponent();
+                value = owner.data[this.data.var];
             }
             wx.setClipboardData({
                 data: value

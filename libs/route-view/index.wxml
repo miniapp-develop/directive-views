@@ -1,0 +1,4 @@
+<view class="route directive-class" bind:tap="onTap">
+    <text wx:if="{{ auto }}">{{type}}({url:'{{url}}'})</text>
+    <slot wx:else></slot>
+</view>
