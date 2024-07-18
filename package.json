@@ -10,7 +10,6 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@xesam/timer": "^0.1.0",
         "json5": "^2.2.3"
     }
 }
