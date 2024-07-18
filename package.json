@@ -1,0 +1,15 @@
+{
+    "name": "directive-views",
+    "version": "0.0.1",
+    "description": "用组件方式来调用小程序的API",
+    "main": ".eslintrc.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@xesam/timer": "^0.1.0"
+    }
+}

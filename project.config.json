@@ -1,5 +1,5 @@
 {
-  "appid": "wx132bb522ad967270",
+  "appid": "wx9029e39ac1befc18",
   "compileType": "miniprogram",
   "libVersion": "2.12.3",
   "packOptions": {
@@ -25,5 +25,6 @@
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "projectname": "directive-views"
 }

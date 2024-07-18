@@ -1,10 +1,10 @@
 <view class="debug directive-class">
     <view class="debug-action" bind:tap="onTapOpen">
-        <button wx:if="{{disabled}}" type="default">{{disabled}}</button>
-        <slot wx:else name="disabled"></slot>
+        <button wx:if="{{open}}" type="default">{{open}}</button>
+        <slot wx:else name="open"></slot>
     </view>
     <view class="debug-action" bind:tap="onTapClose">
-        <button wx:if="{{enabled}}" type="warn">{{enabled}}</button>
-        <slot wx:else name="enabled"></slot>
+        <button wx:if="{{close}}" type="warn">{{close}}</button>
+        <slot wx:else name="close"></slot>
     </view>
 </view>

@@ -5,15 +5,36 @@
             <button type="default">复制 value 的值</button>
         </copy>
     </view>
-        <copy value="你好"><button type="default">复制 value 的值</button></copy>
-        <copy var="text"><button type="default">复制 text 的值</button></copy>
-        <copy value="你好" var="text"><button type="default">复制 value 的值</button></copy>
-    <debug disabled="开启调试" enabled="关闭调试"/>
-    <debug>
-        <button slot="disabled" type="primary">slot开启调试</button>
-        <button slot="enabled" type="primary">slot关闭调试</button>
-    </debug>
-    <debug disabled="开启调试">
-        <text slot="enabled">slot关闭调试</text>
-    </debug>
+    <view>
+        <copy value="你好">
+            <button type="default">复制 value 的值</button>
+        </copy>
+    </view>
+    <view>
+        <copy var="text">
+            <button type="default">复制 text 的值</button>
+        </copy>
+    </view>
+    <view>
+        <copy value="你好" var="text">
+            <button type="default">复制 value 的值</button>
+        </copy>
+    </view>
+    <view>
+        <debug open="开启调试" close="关闭调试" />
+        <debug>
+            <button slot="open" type="primary">slot开启调试</button>
+            <button slot="close" type="primary">slot关闭调试</button>
+        </debug>
+        <debug >
+            <text slot="open">slot开启调试</text>
+            <text slot="close">slot关闭调试</text>
+        </debug>
+        <debug close="关闭调试">
+            <text slot="open">slot开启调试</text>
+        </debug>
+        <debug open="开启调试">
+            <text slot="close">slot关闭调试</text>
+        </debug>
+    </view>
 </view>

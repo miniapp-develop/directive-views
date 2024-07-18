@@ -1,10 +1,10 @@
 Component({
     properties: {
-        disabled: {
+        open: {
             type: String,
             value: null
         },
-        enabled: {
+        close: {
             type: String,
             value: null
         }
@@ -17,11 +17,13 @@ Component({
     data: {},
     methods: {
         onTapOpen(e) {
+            console.log('debug', true);
             wx.setEnableDebug({
                 enableDebug: true
             })
         },
         onTapClose(e) {
+            console.log('debug', false);
             wx.setEnableDebug({
                 enableDebug: false
             })
