@@ -1,12 +1,15 @@
 {
-    "name": "directive-views",
+    "name": "@mini-dev/directive-views",
     "version": "0.0.1",
     "description": "用组件方式来调用小程序的API",
     "main": ".eslintrc.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [],
+    "keywords": [
+        "小程序",
+        "小程序开发"
+    ],
     "author": "",
     "license": "ISC",
     "dependencies": {

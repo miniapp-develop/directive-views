@@ -6,13 +6,8 @@
         </copy>
     </view>
     <view>
-        <copy value="你好">
-            <button type="default">复制 value 的值</button>
-        </copy>
-    </view>
-    <view>
         <copy var="text">
-            <button type="default">复制 text 的值</button>
+            <button type="default">复制 var变量 的值</button>
         </copy>
     </view>
     <view>
