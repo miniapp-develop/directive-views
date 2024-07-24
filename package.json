@@ -6,13 +6,21 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "dependencies": {
+        "json5": "^2.2.3"
+    },
     "keywords": [
         "小程序",
         "小程序开发"
     ],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "json5": "^2.2.3"
-    }
+    "repository": {
+        "type": "git",
+        "url": "git+git@github.com:miniapp-develop/directive-views.git"
+    },
+    "bugs": {
+        "url": "https://github.com/miniapp-develop/directive-views"
+    },
+    "homepage": "https://github.com/miniapp-develop/directive-views",
+    "author": "xesam",
+    "license": "ISC"
 }
