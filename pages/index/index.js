@@ -2,12 +2,16 @@ Page({
     data: {
         text: 'just do IT'
     },
-    onLoad(query) {},
+    onLoad(query) {
+    },
     function1(arg) {
         console.log('function1', arg);
     },
     function2(arg) {
         console.log('function2', arg);
+    },
+    onHandleFunctionEvent(fnName, fnArg) {
+        console.log('onHandleFunctionEvent', fnName, fnArg);
     },
     log(e) {
         console.log('page.log', e);

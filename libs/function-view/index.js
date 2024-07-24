@@ -20,13 +20,21 @@ Component({
     data: {},
     methods: {
         onTap(e) {
+            const globalHandle = 'onHandleFunctionEvent';
+            const name = this.data.name;
             const arg = JSON5.parse(this.data.arg);
             const owner = this.selectOwnerComponent();
-            if (owner[this.data.name]) {
-                owner[this.data.name](arg);
+            if (owner[name]) {
+                owner[name](arg);
             } else {
-                this.triggerEvent('invoke', { name: this.data.name, arg: arg });
+                const WX_PREFIX = 'wx.';
+                if (name.startsWith(WX_PREFIX)) {
+                    wx[name.substring(WX_PREFIX.length)](arg);
+                } else if (owner[globalHandle]) {
+                    owner[globalHandle](name, arg);
+                }
             }
+            this.triggerEvent('invoke', { name: this.data.name, arg: arg });
         }
     }
 });

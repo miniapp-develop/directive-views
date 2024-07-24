@@ -21,7 +21,7 @@
         </copy>
     </view>
     <view>
-        <debug open="开启调试" close="关闭调试" />
+        <debug open="开启调试" close="关闭调试"/>
         <debug>
             <button slot="open" type="primary">slot开启调试</button>
             <button slot="close" type="primary">slot关闭调试</button>
@@ -38,17 +38,22 @@
         </debug>
     </view>
     <view>
-        <function directive-class="function" name="function1" arg="{name:'fn1'}" auto />
+        <function directive-class="function" name="function1" arg="{name:'fn1'}" auto/>
         <function directive-class="function" name="function2" arg="{name:'fn2'}">
             function2({name:'fn2'})
         </function>
-        <function directive-class="function" name="nonExsitFn" arg="{name:'fn2'}" bindinvoke="log">
-            nonExsitFn({name:'fn2'})
+        <function directive-class="function" name="wx.navigateTo" arg="{url:'/pages/page2/index'}" auto/>
+        <function directive-class="function" name="nonExistFn" arg="{name:'fn3'}">
+            nonExistFn({name:'fn3'})
+        </function>
+        <function directive-class="function" name="nonExistFn" arg="{name:'fn4'}" bindinvoke="log">
+            nonExistFn({name:'fn4'})
         </function>
     </view>
     <view>
-        <route directive-class="route" url="/pages/page2/index" auto />
+        <route directive-class="route" url="/pages/page2/index" auto/>
         <route directive-class="route" url="/pages/page2/index">navigateTo page2</route>
+        <route directive-class="route" type="redirectTo" url="/pages/page2/index">redirectTo page2</route>
         <route directive-class="route" url="/pages/none/index">navigateTo none</route>
     </view>
 </view>
