@@ -2,7 +2,7 @@
     "usingComponents": {
         "copy": "/libs/copy/index",
         "debug": "/libs/debug/index",
-        "function": "/libs/function-view/index",
-        "route": "/libs/route-view/index"
+        "function": "/libs/function/index",
+        "route": "/libs/route/index"
     }
 }
