@@ -57,6 +57,10 @@ npm install @mini-dev/directive-views --save
 
 ## ChangeLog
 
+### 0.0.2
+
+1. 修正针对小程序的 package.json 配置；
+
 ### 0.0.1
 
 1. 添加常用的操作；
