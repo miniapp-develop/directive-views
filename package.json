@@ -1,7 +1,8 @@
 {
     "name": "@mini-dev/directive-views",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "用组件方式来调用小程序的API",
+    "miniprogram": "libs",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -10,7 +11,8 @@
     },
     "keywords": [
         "小程序",
-        "小程序开发"
+        "小程序开发",
+        "小程序组件"
     ],
     "repository": {
         "type": "git",
