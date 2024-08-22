@@ -1,4 +1,4 @@
-<view class="route directive-class" bind:tap="onTap">
-    <text wx:if="{{ auto }}">{{type}}({url:'{{url}}'})</text>
+<view class="route mini-class directive-class" bind:tap="onTap">
+    <text wx:if="{{ auto }}" class="route_text">{{type}}({url:'{{url}}'})</text>
     <slot wx:else></slot>
 </view>

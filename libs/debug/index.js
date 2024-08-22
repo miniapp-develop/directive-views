@@ -1,4 +1,6 @@
-Component({
+import { MiniComponent } from '../internal';
+
+MiniComponent({
     properties: {
         open: {
             type: String,
@@ -8,10 +10,6 @@ Component({
             type: String,
             value: null
         }
-    },
-    options: {
-        multipleSlots: true,
-        virtualHost: true
     },
     externalClasses: ['directive-class'],
     data: {},

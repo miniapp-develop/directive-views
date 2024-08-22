@@ -1,3 +1,7 @@
-.route{
-    
+.route {
+
+}
+
+.route_text {
+    word-break: break-all;
 }

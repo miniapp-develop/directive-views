@@ -1,4 +1,4 @@
-<view class="debug directive-class">
+<view class="debug mini-class directive-class">
     <view class="debug-action" bind:tap="onTapOpen">
         <button wx:if="{{open}}" type="default">{{open}}</button>
         <slot wx:else name="open"></slot>

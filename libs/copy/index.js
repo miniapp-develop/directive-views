@@ -1,4 +1,6 @@
-Component({
+import { MiniComponent } from '../internal';
+
+MiniComponent({
     properties: {
         value: {
             type: String,
@@ -9,7 +11,6 @@ Component({
             value: null
         }
     },
-    options: { virtualHost: true },
     externalClasses: ['directive-class'],
     data: {},
     methods: {

@@ -1,4 +1,4 @@
-<view class="function directive-class" bind:tap="onTap">
-    <text wx:if="{{ auto }}">{{name}}({{arg}})</text>
+<view class="function mini-class directive-class" bind:tap="onTap">
+    <text wx:if="{{ auto }}" class="function_text">{{name}}({{arg}})</text>
     <slot wx:else></slot>
 </view>

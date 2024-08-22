@@ -1,6 +1,7 @@
 const JSON5 = require('json5');
+import { MiniComponent } from '../internal';
 
-Component({
+MiniComponent({
     properties: {
         name: {
             type: String,
@@ -15,7 +16,6 @@ Component({
             value: false
         }
     },
-    options: { virtualHost: true },
     externalClasses: ['directive-class'],
     data: {},
     methods: {
