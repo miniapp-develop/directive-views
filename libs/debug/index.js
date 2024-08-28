@@ -11,7 +11,6 @@ MiniComponent({
             value: null
         }
     },
-    externalClasses: ['directive-class'],
     data: {},
     methods: {
         onTapOpen(e) {

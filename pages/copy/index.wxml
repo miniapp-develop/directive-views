@@ -1,0 +1,18 @@
+<view class="container">
+    <view>
+        <text>小时不识月，呼作白玉盘</text>
+        <copy value="你好">
+            <button type="default">复制 value 的值</button>
+        </copy>
+    </view>
+    <view>
+        <copy variable="text">
+            <button type="default">复制 var变量 的值</button>
+        </copy>
+    </view>
+    <view>
+        <copy value="你好" variable="text">
+            <button type="default">复制 value 的值</button>
+        </copy>
+    </view>
+</view>

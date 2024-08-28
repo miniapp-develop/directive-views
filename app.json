@@ -1,5 +1,13 @@
 {
-    "pages": ["pages/index/index", "pages/page2/index"],
+    "pages": [
+        "pages/index/index",
+        "pages/page2/index",
+        "pages/call/index",
+        "pages/debug/index",
+        "pages/copy/index",
+        "pages/function/index",
+        "pages/route/index"
+    ],
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#fff",

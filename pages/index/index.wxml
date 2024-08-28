@@ -1,54 +1,7 @@
 <view class="container">
-    <view>
-        <text>小时不识月，呼作白玉盘</text>
-        <copy value="你好">
-            <button type="default">复制 value 的值</button>
-        </copy>
-    </view>
-    <view>
-        <copy var="text">
-            <button type="default">复制 var变量 的值</button>
-        </copy>
-    </view>
-    <view>
-        <copy value="你好" var="text">
-            <button type="default">复制 value 的值</button>
-        </copy>
-    </view>
-    <view>
-        <debug open="开启调试" close="关闭调试"/>
-        <debug>
-            <button slot="open" type="primary">slot开启调试</button>
-            <button slot="close" type="primary">slot关闭调试</button>
-        </debug>
-        <debug>
-            <text slot="open">slot开启调试</text>
-            <text slot="close">slot关闭调试</text>
-        </debug>
-        <debug close="关闭调试">
-            <text slot="open">slot开启调试</text>
-        </debug>
-        <debug open="开启调试">
-            <text slot="close">slot关闭调试</text>
-        </debug>
-    </view>
-    <view>
-        <function directive-class="function" name="function1" arg="{name:'fn1'}" auto/>
-        <function directive-class="function" name="function2" arg="{name:'fn2'}">
-            function2({name:'fn2'})
-        </function>
-        <function directive-class="function" name="wx.navigateTo" arg="{url:'/pages/page2/index'}" auto/>
-        <function directive-class="function" name="nonExistFn" arg="{name:'fn3'}">
-            nonExistFn({name:'fn3'})
-        </function>
-        <function directive-class="function" name="nonExistFn" arg="{name:'fn4'}" bindinvoke="log">
-            nonExistFn({name:'fn4'})
-        </function>
-    </view>
-    <view>
-        <route directive-class="route" url="/pages/page2/index" auto/>
-        <route directive-class="route" url="/pages/page2/index">navigateTo page2</route>
-        <route directive-class="route" type="redirectTo" url="/pages/page2/index">redirectTo page2</route>
-        <route directive-class="route" url="/pages/none/index">navigateTo none</route>
-    </view>
+    <route mini-class="mini-action" url="/pages/call/index" auto/>
+    <route mini-class="mini-action" url="/pages/copy/index" auto/>
+    <route mini-class="mini-action" url="/pages/debug/index" auto/>
+    <route mini-class="mini-action" url="/pages/function/index" auto/>
+    <route mini-class="mini-action" url="/pages/route/index" auto/>
 </view>

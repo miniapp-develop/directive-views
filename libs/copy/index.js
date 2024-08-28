@@ -1,29 +1,12 @@
 import { MiniComponent } from '../internal';
+import { Value } from '../behaviors';
 
 MiniComponent({
-    properties: {
-        value: {
-            type: String,
-            value: null
-        },
-        var: {
-            type: String,
-            value: null
-        }
-    },
-    externalClasses: ['directive-class'],
-    data: {},
+    behaviors: [Value],
     methods: {
         onTap(e) {
-            let value = null;
-            if (this.data.value) {
-                value = this.data.value;
-            } else if (this.data.var) {
-                const owner = this.selectOwnerComponent();
-                value = owner.data[this.data.var];
-            }
             wx.setClipboardData({
-                data: value
+                data: this.getValue()
             });
         }
     }

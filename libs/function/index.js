@@ -16,11 +16,10 @@ MiniComponent({
             value: false
         }
     },
-    externalClasses: ['directive-class'],
     data: {},
     methods: {
         onTap(e) {
-            const globalHandle = 'onHandleFunctionEvent';
+            const globalHandle = 'onFunctionMissing';
             const name = this.data.name;
             const arg = JSON5.parse(this.data.arg);
             const owner = this.selectOwnerComponent();

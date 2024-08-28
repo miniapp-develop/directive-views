@@ -15,7 +15,6 @@ MiniComponent({
             value: false
         }
     },
-    externalClasses: ['directive-class'],
     data: {},
     methods: {
         onTap(e) {

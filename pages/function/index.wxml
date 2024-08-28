@@ -1,0 +1,11 @@
+<view class="container">
+    <function directive-class="mini-action" name="function1" arg="{name:'fn1'}" auto/>
+    <function directive-class="mini-action" name="function2" arg="{name:'fn2'}">
+        function2({name:'fn2'})
+    </function>
+    <function directive-class="mini-action" name="wx.navigateTo" arg="{url:'/pages/page2/index'}" auto/>
+    <function directive-class="mini-action" name="nonExisting" arg="{name:'fn3'}" auto>
+    </function>
+    <function directive-class="mini-action" name="nonExisting" arg="{name:'fn4'}" bindinvoke="log" auto>
+    </function>
+</view>

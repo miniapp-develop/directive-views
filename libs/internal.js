@@ -1,8 +1,8 @@
 function _Component(ComponentOption = {}) {
     if (!ComponentOption.externalClasses) {
-        ComponentOption.externalClasses = []
+        ComponentOption.externalClasses = [];
     }
-    ComponentOption.externalClasses.unshift('mini-class');
+    ComponentOption.externalClasses.unshift('mini-class', 'directive-class');
     if (!ComponentOption.behaviors) {
         ComponentOption.behaviors = [];
     }
@@ -12,7 +12,7 @@ function _Component(ComponentOption = {}) {
         multipleSlots: true,
         pureDataPattern: /^_/,
         ...ComponentOption.options
-    }
+    };
     Component(ComponentOption);
 }
 
