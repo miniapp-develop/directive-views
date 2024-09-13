@@ -13,8 +13,8 @@
     <route ext-class="mini-action" name="back" auto/>
 
     <view class="page__section_header">reLaunch</view>
-    <route ext-class="mini-action" name="reLaunch" auto/>
-    <route ext-class="mini-action" name="launch" auto/>
+    <route ext-class="mini-action" name="reLaunch" url="/pages/index/index" auto/>
+    <route ext-class="mini-action" name="launch" url="/pages/index/index" auto/>
 
     <view class="page__section_header">switchTab</view>
     <route ext-class="mini-action" name="switchTab" auto/>
