@@ -3,6 +3,11 @@
     background: #f5f5f5;
 }
 
+.page__section_header {
+    padding: 0.8em;
+    color: #666;
+}
+
 .mini-action {
     display: block;
     padding: 0.8em;

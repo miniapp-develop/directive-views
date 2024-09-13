@@ -1,11 +1,14 @@
 <view class="container">
-    <function directive-class="mini-action" name="function1" arg="{name:'fn1'}" auto/>
-    <function directive-class="mini-action" name="function2" arg="{name:'fn2'}">
+    <view class="page__section_header">page methods</view>
+    <function ext-class="mini-action" name="function1" arg="{name:'fn1'}" auto/>
+    <function ext-class="mini-action" name="function2" arg="{name:'fn2'}">
         function2({name:'fn2'})
     </function>
-    <function directive-class="mini-action" name="wx.navigateTo" arg="{url:'/pages/page2/index'}" auto/>
-    <function directive-class="mini-action" name="nonExisting" arg="{name:'fn3'}" auto>
-    </function>
-    <function directive-class="mini-action" name="nonExisting" arg="{name:'fn4'}" bindinvoke="log" auto>
-    </function>
+    <view class="page__section_header">non-existing methods</view>
+    <function ext-class="mini-action" name="nonExisting" arg="{name:'fn3'}" auto/>
+    <function ext-class="mini-action" name="nonExisting" arg="{name:'fn4'}" bindinvoke="log" auto/>
+    <view class="page__section_header">wx.*</view>
+    <function ext-class="mini-action" name="wx.getDeviceInfo" auto/>
+    <function ext-class="mini-action" name="wx.canIUse" arg="['console.log']" auto/>
+    <function ext-class="mini-action" name="wx.navigateTo" arg="{url:'/pages/page2/index'}" auto/>
 </view>

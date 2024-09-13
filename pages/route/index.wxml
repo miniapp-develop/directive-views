@@ -1,7 +1,22 @@
 <view class="container">
+    <view class="page__section_header">navigateTo</view>
+    <route ext-class="mini-action" url="/pages/page2/index" auto/>
+    <route ext-class="mini-action" arg="{url:'/pages/page2/index'}">navigateTo page2</route>
+    <route ext-class="mini-action" url="/pages/none/index">navigateTo none</route>
 
-    <route directive-class="mini-action" url="/pages/page2/index" auto/>
-    <route directive-class="mini-action" url="/pages/page2/index">navigateTo page2</route>
-    <route directive-class="mini-action" type="redirectTo" url="/pages/page2/index">redirectTo page2</route>
-    <route directive-class="mini-action" url="/pages/none/index">navigateTo none</route>
+    <view class="page__section_header">redirectTo</view>
+    <route ext-class="mini-action" name="redirectTo" url="/pages/page2/index" auto/>
+    <route ext-class="mini-action" name="redirect" url="/pages/page2/index" auto/>
+
+    <view class="page__section_header">navigateBack</view>
+    <route ext-class="mini-action" name="navigateBack" auto/>
+    <route ext-class="mini-action" name="back" auto/>
+
+    <view class="page__section_header">reLaunch</view>
+    <route ext-class="mini-action" name="reLaunch" auto/>
+    <route ext-class="mini-action" name="launch" auto/>
+
+    <view class="page__section_header">switchTab</view>
+    <route ext-class="mini-action" name="switchTab" auto/>
+    <route ext-class="mini-action" name="switch" auto/>
 </view>
