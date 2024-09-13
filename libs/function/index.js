@@ -1,35 +1,15 @@
-const JSON5 = require('json5');
+import { Function } from '../behaviors';
 import { MiniComponent } from '../internal';
 
 const _Global_Handle_Name = 'onFunctionMissing';
 const _WX_PREFIX = 'wx.';
 
 MiniComponent({
+    behaviors: [Function],
     properties: {
-        name: {
-            type: String,
-            value: ''
-        },
-        arg: {
-            type: String,
-            value: null
-        },
         auto: {
             type: Boolean,
             value: false
-        }
-    },
-    data: {
-        autoExpr: ''
-    },
-
-    lifetimes: {
-        attached() {
-            const name = this.data.name;
-            const arg = JSON5.parse(this.data.arg);
-            this.setData({
-                autoExpr: `${name}(${arg ? this.data.arg : ''})`
-            });
         }
     },
     methods: {
@@ -39,33 +19,34 @@ MiniComponent({
             }
         },
         onTap(e) {
-            const name = this.data.name;
-            const arg = JSON5.parse(this.data.arg);
-            const isArrayArg = Array.isArray(arg);
+            const { name, args, expr } = this.getSignature();
             const owner = this.selectOwnerComponent();
             if (owner[name]) {
-                owner[name](arg);
+                owner[name](...args);
             } else {
                 if (name.startsWith(_WX_PREFIX)) {
                     const wxName = name.substring(_WX_PREFIX.length);
                     if (wx[wxName]) {
-                        if (isArrayArg) {
-                            wx[wxName](...arg);
-                        } else {
-                            if (arg) {
-                                wx[wxName](arg);
+                        const ret = wx[wxName](...args);
+                        if (ret) {
+                            if (ret.then) {
+                                ret.then(res => {
+                                    console.log(expr, res);
+                                }).catch(err => {
+                                    console.error(expr, err);
+                                });
                             } else {
-                                wx[wxName]();
+                                console.log(expr, ret);
                             }
                         }
                     } else {
-                        this.__missing__(owner, name, arg);
+                        this.__missing__(owner, name, args);
                     }
                 } else {
-                    this.__missing__(owner, name, arg);
+                    this.__missing__(owner, name, args);
                 }
             }
-            this.triggerEvent('invoke', { name: name, arg: arg });
+            this.triggerEvent('invoke', { name: name, args: args });
         }
     }
 });

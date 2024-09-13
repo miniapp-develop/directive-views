@@ -34,12 +34,21 @@ export const Function = Behavior({
             value: null
         }
     },
+    data: {
+        autoExpr: ''
+    },
+    attached() {
+        const { expr } = this.getSignature();
+        this.setData({
+            autoExpr: expr
+        });
+    },
     methods: {
         getStandardFunctionName(name) {
             return name;
         },
         getStandardFunctionArgs(args) {
-            return name;
+            return args;
         },
         getSignature() {
             const name = this.getStandardFunctionName(this.data.name);
