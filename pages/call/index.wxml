@@ -1,8 +1,8 @@
 <view class="container">
     <view>
-        <call mini-class="mini-action" value="10086">拨打 10086</call>
+        <call ext-class="mini-action" value="10086">拨打 10086</call>
     </view>
     <view>
-        <call mini-class="mini-action" variable="phoneNumber">拨打 10086</call>
+        <call ext-class="mini-action" variable="phoneNumber">拨打 10086</call>
     </view>
 </view>

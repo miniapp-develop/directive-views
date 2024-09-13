@@ -1,7 +1,7 @@
 <view class="container">
-    <route mini-class="mini-action" url="/pages/call/index" auto/>
-    <route mini-class="mini-action" url="/pages/copy/index" auto/>
-    <route mini-class="mini-action" url="/pages/debug/index" auto/>
-    <route mini-class="mini-action" url="/pages/function/index" auto/>
-    <route mini-class="mini-action" url="/pages/route/index" auto/>
+    <route ext-class="mini-action" url="/pages/call/index" auto/>
+    <route ext-class="mini-action" url="/pages/copy/index" auto/>
+    <route ext-class="mini-action" url="/pages/debug/index" auto/>
+    <route ext-class="mini-action" url="/pages/function/index" auto/>
+    <route ext-class="mini-action" url="/pages/route/index" auto/>
 </view>

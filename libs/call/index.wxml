@@ -1,3 +1,3 @@
-<text class="call mini-class directive-class" bind:tap="onTap">
+<text class="call ext-class directive-class" bind:tap="onTap">
     <slot></slot>
 </text>

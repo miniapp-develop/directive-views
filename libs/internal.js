@@ -2,7 +2,7 @@ function _Component(ComponentOption = {}) {
     if (!ComponentOption.externalClasses) {
         ComponentOption.externalClasses = [];
     }
-    ComponentOption.externalClasses.unshift('mini-class', 'directive-class');
+    ComponentOption.externalClasses.unshift('ext-class', 'directive-class');
     if (!ComponentOption.behaviors) {
         ComponentOption.behaviors = [];
     }

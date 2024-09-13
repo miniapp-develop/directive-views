@@ -1,4 +1,4 @@
-# directive-views
+# @mini-dev/directive-views
 
 用组件方式来调用小程序的 API。
 
@@ -55,7 +55,9 @@ npm install @mini-dev/directive-views --save
 
 更多配置方式：具体可以参见示例 [pages](./pages)
 
-## ChangeLog
+## Changelogs
+
+### 0.0.3
 
 ### 0.0.2
 
