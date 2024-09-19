@@ -25,7 +25,7 @@ npm install @mini-dev/directive-views --save
 
 ### 复制（copy）
 
-```xml
+```html
 
 <copy value="你好">
     <button type="default">复制 value 的值</button>
@@ -34,21 +34,22 @@ npm install @mini-dev/directive-views --save
 
 ### 调试开关（debug）
 
-```xml
+```html
 
 <debug open="开启调试" close="关闭调试"/>
 ```
 
 ### 函数调用（function）
 
-```xml
+```html
 
-<function directive-class="function" name="function1" arg="{name:'fn1'}" auto/>
+<function directive-class='function' name='function1' arg="{name:'fn1'}" auto />
+<function directive-class='function' name='function1' arg="[1,'a', {name:''fn1}]" auto />
 ```
 
 ### 路由（route）
 
-```xml
+```html
 
 <route directive-class="route" url="/pages/page2/index" auto/>
 ```
@@ -58,6 +59,9 @@ npm install @mini-dev/directive-views --save
 ## Changelogs
 
 ### 0.0.3
+
+1. 增加function的数组参数;
+2. 统一 ext-class 的使用方式;
 
 ### 0.0.2
 
