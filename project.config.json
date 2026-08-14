@@ -1,5 +1,5 @@
 {
-  "appid": "wx9029e39ac1befc18",
+  "appid": "your-appid",
   "compileType": "miniprogram",
   "libVersion": "2.12.3",
   "packOptions": {
@@ -19,7 +19,18 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "condition": false
+    "condition": false,
+    "compileWorklet": false,
+    "uglifyFileName": false,
+    "uploadWithSourceMap": true,
+    "packNpmManually": false,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "localPlugins": false,
+    "disableUseStrict": false,
+    "useCompilerPlugins": false,
+    "swc": false,
+    "disableSWC": true
   },
   "condition": {
     "miniprogram": {
@@ -38,5 +49,6 @@
     "tabIndent": "insertSpaces",
     "tabSize": 2
   },
-  "projectname": "directive-views"
+  "projectname": "directive-views",
+  "simulatorPluginLibVersion": {}
 }
